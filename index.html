@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<title></title>
+</head>
+<body>
+
+	<style type="text/css">
+		.iconic{
+			width: 50px;
+			height: 70px;
+    		color: white;
+		}
+		body{
+			height: 100vh;
+		}
+		img:hover{
+			cursor: pointer;
+			box-shadow: 0 0 0 1px red;
+    		transition: all 800ms ease-out;
+		}
+		.vid{
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+		}
+		.album{
+			height: 75%;
+			width: 75%;
+		}
+		@media (min-aspect-ratio:  16/9){
+			.vid{
+				width: 100%;
+				height: auto;
+			}
+		}
+		@media (max-aspect-ratio:  16/9){
+			.vid{
+				width: auto;
+				height: 100%;
+			}
+		}
+	</style>
+<video autoplay loop muted plays inline class="vid">
+	<source src="lofi.mp4" type="video/mp4">
+</video>
+
+<div  style="margin-top: 25px; margin-bottom: 50px;">
+	<div style="display:flex; justify-content: space-around; align-content: center;">
+		
+<img  id="play" class="iconic" src="play.png">
+	
+		
+<img  id="pause" class="iconic" src="pause.png">	
+	</div>
+	
+	</div>
+
+<p id="someP1" class="someP" style="color: white; font-size:300%; display: flex;justify-content: center;">
+	SONG 1
+</p>
+
+
+<div class="container">
+<div class="row" >
+	<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+		<audio id="song">
+			<source src="song.mp3" type="audio/mp3">
+		</audio>
+		<img class="album" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/e2f9aa74-7587-4a30-b0c0-4df61d7ac308/43.jpg">
+	</div>
+
+	<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+		<audio id="song1">
+			<source src="song1.mp3" type="audio/mp3">
+		</audio>
+		
+		<img class="album" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/edc90e2d-6cb0-47e1-9617-afc44e8c4649/kisschasycover.jpg">
+	</div>
+
+	<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+		<audio id="song2">
+			<source src="song2.mp3" type="audio/mp3">
+		</audio>
+		
+		<img class="album" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6d05daa9-225d-4bf2-9a78-5fcb52abce7a/58.jpg">
+	</div>
+
+	<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+		<audio id="song3">
+			<source src="song3.mp3" type="audio/mp3">
+		</audio>
+		
+		<img class="album" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/aecf4604-1d3b-417f-97c6-d5be80f51eb9/3.jpg">
+	</div>
+
+	<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+		<audio id="song4">
+			<source src="song4.mp3" type="audio/mp3">
+		</audio>
+		
+		<img class="album" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/96a09fe4-907b-4bed-8731-d3fe1c287a36/6.jpg">
+	</div>
+
+	<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+		<audio id="song5">
+			<source src="song5.mp3" type="audio/mp3">
+		</audio>
+		
+		<img class="album" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68c5957a-9e3f-458d-ac48-4fa40c2b7394/27.jpg">
+	</div>
+
+	<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+		<audio id="song6">
+			<source src="song6.mp3" type="audio/mp3">
+		</audio>
+		
+		<img class="album" src="https://i.pinimg.com/564x/db/6c/71/db6c710eb87977b08ee5cf6c65483a93--thom-yorke-the-eraser-music-album-covers.jpg">
+	</div>
+
+	<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+		<audio id="song7">
+			<source src="song7.mp3" type="audio/mp3">
+		</audio>
+		
+		<img class="album" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/9ade3f1d-6b38-496b-a788-61dd2675fe05/37.jpg">
+	</div>
+
+	<div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+		<audio id="song8">
+			<source src="song8.mp3" type="audio/mp3">
+		</audio>
+		
+		<img class="album" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/6b2ef062-6913-4a94-a265-7d75f4f91854/64.jpg">
+	</div>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	//let song = document.getElementById("song");
+	let play = document.getElementById("play");
+	let pause = document.getElementById("pause");
+	let text = document.getElementById("someP1");
+	let choosingSong = "";
+
+	let pics = document.getElementsByClassName('album')
+
+	
+	pics[0].addEventListener("click",function (){
+		text.innerHTML = "SONG 1";
+		choosingSong = "song";
+		song.muted = true;
+		song = document.getElementById(choosingSong);
+	})
+	pics[1].addEventListener("click",function (){
+		text.innerHTML = "SONG 2";
+		choosingSong = "song1";
+		song.muted = true;
+		song = document.getElementById(choosingSong);
+	})
+	pics[2].addEventListener("click",function (){
+		text.innerHTML = "SONG 3";
+		choosingSong = "song2";
+		song.muted = true;
+		song = document.getElementById(choosingSong);
+	})
+	pics[3].addEventListener("click",function (){
+		text.innerHTML = "SONG 4";
+		choosingSong = "song3";
+		song.muted = true;
+		song = document.getElementById(choosingSong);
+	})
+	pics[4].addEventListener("click",function (){
+		text.innerHTML = "SONG 5";
+		choosingSong = "song4";
+		song.muted = true;
+		song = document.getElementById(choosingSong);
+	})
+	pics[5].addEventListener("click",function (){
+		text.innerHTML = "SONG 6";
+		choosingSong = "song5";
+		song.muted = true;
+		song = document.getElementById(choosingSong);
+	})
+	pics[6].addEventListener("click",function (){
+		text.innerHTML = "SONG 7";
+		choosingSong = "song6";
+		song.muted = true;
+		song = document.getElementById(choosingSong);
+	})
+	pics[7].addEventListener("click",function (){
+		text.innerHTML = "SONG 8";
+		choosingSong = "song7";
+		song.muted = true;
+		song = document.getElementById(choosingSong);	
+	})
+	pics[8].addEventListener("click",function (){
+		text.innerHTML = "SONG 9";
+		choosingSong = "song8";
+		song.muted = true;
+		console.log(123)
+		song = document.getElementById(choosingSong);	
+	})
+
+	
+	play.addEventListener("click",function (){
+		song.currentTime = 0;
+		song.muted = false;
+		song.play()
+	})
+	pause.addEventListener("click",function (){
+		song.pause()
+	})
+
+
+
+</script>
+</body>
+</html>
